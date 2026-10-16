@@ -1,0 +1,6 @@
+{
+  "name": "Bengal Commerce",
+  "description": "An enterprise grocery retail platform for Bangladesh with FEFO freshness routing, 2-hour express Dhaka delivery, and cloud retail POS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
