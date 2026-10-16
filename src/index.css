@@ -9,10 +9,17 @@
   html {
     font-family: var(--font-sans);
     scroll-behavior: smooth;
+    background-color: #f6f9fc;
+    color: #0f172a;
+  }
+
+  ::selection {
+    background-color: #2563eb;
+    color: #ffffff;
   }
 }
 
-/* Custom scrollbar styling for compact lists and tables */
+/* Custom scrollbar styling with bluish tint */
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -25,5 +32,5 @@
   border-radius: 9999px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #94a3b8;
+  background: #93c5fd;
 }

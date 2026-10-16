@@ -149,13 +149,13 @@ export const Footer: React.FC = () => {
           </div>
         </div>
 
-        {/* 2. Newsletter / VIP Fresh Club Strip */}
-        <div className="border-b border-slate-800 bg-gradient-to-r from-emerald-950/40 via-slate-900 to-slate-900">
+        {/* 2. Newsletter / VIP Fresh Club Strip (Rich Sapphire & Emerald) */}
+        <div className="border-b border-blue-950 bg-gradient-to-r from-blue-950/60 via-slate-900 to-[#07242e]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
               <div className="max-w-xl text-center lg:text-left">
-                <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] font-semibold mb-2">
-                  <Sparkles className="w-3.5 h-3.5" />
+                <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-sky-300 text-[11px] font-semibold mb-2">
+                  <Sparkles className="w-3.5 h-3.5 text-sky-400" />
                   <span>Dhaka Freshness Club</span>
                 </div>
                 <h3 className="text-lg sm:text-xl font-bold text-white tracking-tight">
@@ -169,11 +169,11 @@ export const Footer: React.FC = () => {
               {/* Newsletter Form */}
               <div className="w-full lg:w-auto shrink-0">
                 {subscribedCoupon ? (
-                  <div className="flex items-center gap-3 bg-emerald-950/60 border border-emerald-500/40 rounded-xl px-4 py-3 text-emerald-200">
+                  <div className="flex items-center gap-3 bg-blue-950/60 border border-blue-500/40 rounded-xl px-4 py-3 text-sky-200">
                     <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0" />
                     <div>
                       <div className="font-semibold text-white text-xs">Coupon Unlocked: {subscribedCoupon}</div>
-                      <div className="text-[11px] text-emerald-300">৳ 150 off orders over ৳ 799 at checkout</div>
+                      <div className="text-[11px] text-sky-300">৳ 150 off orders over ৳ 799 at checkout</div>
                     </div>
                     <button
                       type="button"
@@ -187,20 +187,20 @@ export const Footer: React.FC = () => {
                 ) : (
                   <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2 w-full max-w-md">
                     <div className="relative flex-1">
-                      <Mail className="w-4 h-4 text-slate-500 absolute left-3.5 top-1/2 -translate-y-1/2" />
+                      <Mail className="w-4 h-4 text-sky-400 absolute left-3.5 top-1/2 -translate-y-1/2" />
                       <input
                         type="email"
                         value={emailInput}
                         onChange={(e) => setEmailInput(e.target.value)}
                         placeholder="Enter your email address..."
-                        className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-white placeholder-slate-500 text-xs focus:outline-hidden focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all"
+                        className="w-full pl-10 pr-4 py-2.5 rounded-xl bg-slate-900 border border-blue-900 text-white placeholder-slate-500 text-xs focus:outline-hidden focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all"
                         required
                       />
                     </div>
                     <button
                       type="submit"
                       disabled={isSubscribing}
-                      className="px-5 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-semibold text-xs tracking-tight transition-all duration-200 flex items-center justify-center gap-1.5 cursor-pointer shrink-0 disabled:opacity-70 shadow-xs shadow-emerald-500/20"
+                      className="px-5 py-2.5 rounded-xl bg-gradient-to-r from-blue-600 to-emerald-600 hover:from-blue-500 hover:to-emerald-500 text-white font-semibold text-xs tracking-tight transition-all duration-200 flex items-center justify-center gap-1.5 cursor-pointer shrink-0 disabled:opacity-70 shadow-md shadow-blue-600/20"
                     >
                       {isSubscribing ? 'Processing...' : 'Claim ৳ 150 Off'}
                       <ArrowRight className="w-3.5 h-3.5" />
@@ -227,7 +227,7 @@ export const Footer: React.FC = () => {
                 }}
                 className="flex items-center gap-2.5 cursor-pointer select-none group w-fit"
               >
-                <div className="w-9 h-9 rounded-xl bg-emerald-600 text-white flex items-center justify-center shadow-xs group-hover:bg-emerald-500 transition-colors">
+                <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 via-blue-700 to-emerald-500 text-white flex items-center justify-center shadow-md shadow-blue-500/20 group-hover:scale-105 transition-transform">
                   <Store className="w-5 h-5" />
                 </div>
                 <div>
@@ -235,7 +235,7 @@ export const Footer: React.FC = () => {
                     <span className="font-black text-lg tracking-tight text-white leading-none">
                       Bengal<span className="text-emerald-400">Fresh</span>
                     </span>
-                    <span className="bg-emerald-900/60 text-emerald-300 border border-emerald-500/30 text-[9px] font-bold px-1.5 py-0.5 rounded">
+                    <span className="bg-blue-900/60 text-sky-300 border border-blue-500/30 text-[9px] font-bold px-1.5 py-0.5 rounded">
                       DHAKA
                     </span>
                   </div>
